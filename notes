@@ -1,0 +1,23 @@
+ERROR
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/src/App.js: 'return' outside of function. (5:2)
+
+  3 |
+  4 |
+> 5 |   return (
+    |   ^
+  6 |     <Router>
+  7 |       <div className="container">
+  8 |         <nav className="navbar navbar-expand-lg navbar-dark mb-4 rounded">
+    at constructor (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:6613:19)
+    at FlowParserMixin.parseReturnStatement (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:13012:12)
+    at FlowParserMixin.parseStatementContent (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:12675:21)
+    at FlowParserMixin.parseStatementLike (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:12644:17)
+    at FlowParserMixin.parseStatementLike (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:2922:24)
+    at FlowParserMixin.parseModuleItem (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:12621:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:13192:36)
+    at FlowParserMixin.parseBlockBody (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:13185:10)
+    at FlowParserMixin.parseProgram (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:12514:10)
+    at FlowParserMixin.parseTopLevel (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@babel/parser/lib/index.js:12504:25)
+    at FlowParserMixin.parseTopLevel (/workspaces/skills-build-applications-w-copilot-agent-mode/octofit-tracker/frontend/node_modules/@
