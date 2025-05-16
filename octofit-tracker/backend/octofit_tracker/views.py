@@ -9,13 +9,22 @@ def api_root(request, format=None):
     if request.method == 'POST':
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
-    base_url = 'http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev/'
+    # Try to use the Codespace URL if available, otherwise fallback to localhost
+    codespace_url = 'https://reimagined-capybara-w9x5x6vjvfv6q4-8000.app.github.dev/'
+    localhost_url = 'http://localhost:8000/'
+    # Detect if request is coming from Codespace or localhost
+    host = request.get_host()
+    if 'app.github.dev' in host:
+        base_url = codespace_url
+    else:
+        base_url = localhost_url
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',
         'activities': base_url + 'api/activities/?format=api',
         'leaderboard': base_url + 'api/leaderboard/?format=api',
-        'workouts': base_url + 'api/workouts/?format=api'
+        'workouts': base_url + 'api/workouts/?format=api',
+        'docs': base_url,
     })
 
 class UserViewSet(viewsets.ModelViewSet):

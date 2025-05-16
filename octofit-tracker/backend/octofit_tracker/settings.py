@@ -25,7 +25,12 @@ SECRET_KEY = "django-insecure-h01$ta-5v_3p82+rbz(=pi5z^1sn2hd3pvec9xu80#msixirm%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'reimagined-capybara-w9x5x6vjvfv6q4-8000.app.github.dev',
+    # Add more Codespace URLs here if needed
+]
 
 
 # Application definition
